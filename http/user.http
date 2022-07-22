@@ -1,21 +1,29 @@
 ###
-
-POST http://localhost:3000/api/auth/login
+POST http://localhost:3000/api/users
 Content-Type: application/json
 
-
 {
-    "username": "Hola",
-    "password": "programmer"
+  "first_name": "test",
+  "last_name": "2"
 }
 
 ###
-
-POST http://localhost:5000/api/auth/login
+GET http://localhost:3000/api/users
 Content-Type: application/json
 
+###
+GET http://localhost:3000/api/users/1
+Content-Type: application/json
+
+###
+DELETE http://localhost:3000/api/users/1
+Content-Type: application/json
+
+###
+PUT http://localhost:3000/api/users/2
+Content-Type: application/json
 
 {
-    "username": "Hola",
-    "password": "programmer"
+  "first_name": "test",
+  "last_name": "3"
 }

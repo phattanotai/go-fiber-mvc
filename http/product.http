@@ -1,0 +1,29 @@
+###
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+  "name": "test",
+  "serial_number": "2"
+}
+
+###
+GET http://localhost:3000/api/products
+Content-Type: application/json
+
+###
+GET http://localhost:3000/api/products/1
+Content-Type: application/json
+
+###
+DELETE http://localhost:3000/api/products/1
+Content-Type: application/json
+
+###
+PUT http://localhost:3000/api/products/1
+Content-Type: application/json
+
+{
+  "name": "test",
+  "serial_number": "1"
+}
